@@ -1,6 +1,6 @@
 {
   "name": "Grocy - Moverperfect",
-  "version": "dev",
+  "version": "0.9.1",
   "slug": "grocy_moverperfect",
   "description": "ERP beyond your fridge! A groceries & household management solution for your home",
   "url": "https://github.com/hassio-addons/addon-grocy",
