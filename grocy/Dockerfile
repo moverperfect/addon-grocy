@@ -30,7 +30,7 @@ RUN \
     \
     && yarn global add modclean \
     \
-    && git clone --branch "v3.0.1" --depth=1 \
+    && git clone --branch "release" --depth=1 \
         https://github.com/moverperfect/grocy.git /var/www/grocy \
     \
     && cd /var/www/grocy \
