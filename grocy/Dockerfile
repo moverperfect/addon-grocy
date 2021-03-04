@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.2
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -10,23 +10,23 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache \
         nginx=1.18.0-r13 \
-        php7-fpm=7.4.14-r0 \
-        php7-gd=7.4.14-r0 \
-        php7-json=7.4.14-r0 \
-        php7-mbstring=7.4.14-r0 \
-        php7-opcache==7.4.14-r0 \
-        php7-pdo_sqlite=7.4.14-r0 \
-        php7-pdo==7.4.14-r0 \
-        php7-simplexml=7.4.14-r0 \
-        php7-tokenizer=7.4.14-r0 \
-        php7-fileinfo=7.4.14-r0 \
-        php7=7.4.14-r0 \
-        php7-ctype=7.4.14-r0 \
+        php7-fpm=7.4.15-r0 \
+        php7-gd=7.4.15-r0 \
+        php7-json=7.4.15-r0 \
+        php7-mbstring=7.4.15-r0 \
+        php7-opcache=7.4.15-r0 \
+        php7-pdo_sqlite=7.4.15-r0 \
+        php7-pdo=7.4.15-r0 \
+        php7-simplexml=7.4.15-r0 \
+        php7-tokenizer=7.4.15-r0 \
+        php7-fileinfo=7.4.15-r0 \
+        php7=7.4.15-r0 \
+        php7-ctype=7.4.15-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.30.0-r0 \
+        git=2.30.1-r0 \
         yarn=1.22.10-r0 \
-        composer=2.0.8-r0 \
+        composer=2.0.9-r0 \
     \
     && yarn global add modclean \
     \
